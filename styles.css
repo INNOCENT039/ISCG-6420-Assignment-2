@@ -1,0 +1,247 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #217b7e;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin-left: 40px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 4px;
+
+}
+
+.navbar ul li a:hover {
+  color: #000000;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.maincontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 20px 20px;
+  max-width: 2000px;
+  
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mapcontainer {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  background: #fff;
+  border-radius: 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.mapimage {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.area {
+  position: absolute;
+  width: 70px;
+  height: 60px;
+  background-color: rgba(0, 255, 0, 0.5);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.area.booked {
+  background-color: rgba(255, 0, 0, 0.5);
+  cursor: not-allowed;
+}
+
+.hidden {
+  display: none;
+}
+
+
+#info-container {
+  border-radius: 12px;
+  height: 100px;
+  width: 800px;
+  background: linear-gradient(to top right, #217b7e 20%, transparent 100%);
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.infopanel-content {
+  display: flex;
+  align-items: center;
+}
+
+.infopanel-content img {
+  width: 100px;
+  height: auto;
+  padding: 16px 16px;
+  margin-right: 20px;
+}
+#area1 {
+  top: 40%;
+  left: 10%;
+}
+
+#area2 {
+  top: 15%;
+  left: 42%;
+}
+
+#area3 {
+  top: 50%;
+  left: 30%;
+}
+
+#area4 {
+  top: 25%;
+  left: 80%;
+}
+
+#area5 {
+  top: 80%;
+  left: 85%;
+}
+
+#area6 {
+  top: 60%;
+  left: 70%;
+}
+
+#area7 {
+  top: 10%;
+  left: 60%;
+}
+
+#area8 {
+  top: 70%;
+  left: 10%;
+}
+
+#area9 {
+  top: 70%;
+  left: 40%;
+}
+
+#area10 {
+  top: 85%;
+  left: 55%;
+}
+
+.bookingform-container {
+  background: #f0f8ff;
+  border-radius: 40px;
+  padding: 30px 20px;
+  width: 1000px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.bookingform-container label {
+    display: block;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.bookingform-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.bookingform-container button {
+    background: #217b7e;
+    color: white;
+    margin-left: 40%;
+    width: 20%;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.bookingflex {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+.bookinginstructions {
+    font-size: 16px;
+    color: #222;
+    background: #fff;
+    border-radius: 8px;
+    padding: 18px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    width: 450px;
+    height: 250px;
+    line-height: 1.8;
+
+}
+
+#bookingSummary {
+    background: #fff;
+    border-radius: 8px;
+    padding: 0px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    width: 450px;
+    height: 285px;
+  
+}
+
+#bookingSummary.hidden {
+    display: none;
+}
+
+#summaryContent {
+  margin: 0;
+  padding: 0;
+  line-height: 0.4; 
+}
+
+#confirmButton{
+  margin-left: 33%;
+  width: 35%;
+  font-weight: bold;
+ 
+}
