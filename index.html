@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parakai Springs</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar  -->
+    <div class="navbar">
+        <div class="icon">
+            <img src="nav_logo.png" alt="Parakai Springs Logo" class="logo">
+        </div>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="https://rajmansharma2024.github.io/finalproject/">PLAY GAME</a></li>
+            <li><a href="Wireframes.pdf" target="_blank">WIREFRAMES</a></li>
+            <li><a href="Storyboard.pdf" target="_blank">STORYBOARD</a></li>
+            <li><a href="xml documentation.pdf" target="_blank">DATA DESIGN</a></li>
+        </ul>
+    </div>
+
+    <!-- Main container for page content -->
+    <div class="maincontainer">
+        <div class="left-column">
+            <div class="mapcontainer">
+                <img src="Map_Image.png" alt="Parakai Springs Map" class="mapimage">
+                <div class="area" id="area1" data-id="1">1</div>
+                <div class="area booked" id="area2" data-id="2">2</div>
+                <div class="area" id="area3" data-id="3">3</div>
+                <div class="area" id="area4" data-id="4">4</div>
+                <div class="area booked" id="area5" data-id="5">5</div>
+                <div class="area" id="area6" data-id="6">6</div>
+                <div class="area" id="area7" data-id="7">7</div>
+                <div class="area booked" id="area8" data-id="8">8</div>
+                <div class="area" id="area9" data-id="9">9</div>
+                <div class="area" id="area10" data-id="10">10</div>
+            </div>
+
+            <!-- Info container: displays area details on hover -->
+            <div id="info-container" class="hidden">
+                <p>Hover over an area to see details here</p>
+            </div>
+
+        </div>
+
+         <!-- Booking form -->
+        <div class="bookingform-container">
+            <h3>Book Your Area</h3>
+            <form id="bookingForm">
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" required>
+
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" required>
+
+                <label for="people">Number of People:</label>
+                <input type="number" id="people" min="1" required>
+
+                <button type="button" id="searchButton">Search</button>
+            </form>
+
+            <!-- Instructions for using the booking system -->
+            <div class="bookingflex">
+                <div class="bookinginstructions">
+                    <strong>Instructions for how to use the booking system.<br>
+                        This could include:</strong>
+                    <ul>
+                        <li>Set the Check In and Check Out dates</li>
+                        <li>Enter capacity required</li>
+                        <li>Click Search to see available areas</li>
+                        <li>Hover over areas to see details</li>
+                        <li>Select an available area</li>
+                        <li>Submit your booking</li>
+                    </ul>
+                </div>
+
+                 <!-- Booking summary: displays after user selects an area -->
+                <div id="bookingSummary" class="booking-details hidden">
+                    <h3>Booking Details</h3>
+                    <div id="summaryContent"></div>
+                    <button type="button" id="confirmButton">Confirm Booking</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
